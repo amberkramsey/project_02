@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Open+Sans&display=swap');
+
+.items {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Open Sans', sans-serif;
+    align-items: flex-start;
+    flex-grow: 1;
+    width: 50%;
+    position: relative; left: 25%; bottom: 350px;}
+.item {flex: 1 0 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;}
+.item:hover {box-shadow: 0 2px 5px -2px black;}
+.item-name {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    font-size: 20px;
+    background-color: darkblue;
+    color: white;}
+.fact-line {display: flex;
+    padding-left: 15px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px 10px 10px 10px;}
+.add-item {background-color: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;}
+.item-description {font-size: 15px;}
+
+
+@media screen and (max-width: 768px) {
+    .item {font-size: 20px;}
+    .items {flex-direction: column;
+    position: relative; top: 70px;}
+section .items {display: flex;}
+}

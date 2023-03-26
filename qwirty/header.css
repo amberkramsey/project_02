@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Open+Sans&display=swap');
+.main-nav, ul a {display: flex;
+    background-color: darkblue;
+    justify-content: space-between;
+    color: white;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left: 10px;}
+.main-nav, ul {align-items: baseline;}
+ul {list-style-type: "|" ;}
+.main-nav li:first-of-type {list-style-type: none;}
+.sub-nav {display: flex;
+    background-color: lightgray;
+    padding-top: 15px;}
+nav .full-width {display: flex;}
+nav .short-width {display: none;}
+.nav-list {display: flex;
+    flex-direction: row;}
+.nav-list li:last-of-type a {border-right: none;}
+.search-form {flex-grow: 2;
+    display: flex;}
+input {flex-grow: 2;
+    padding: 10px;
+    border: none;
+    border-bottom: solid darkblue;}
+button {padding: 10px;
+    border: none;
+    background-color: darkblue;
+    color: white}
+.company-name {color: darkblue;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+        font-family: 'Open Sans', sans-serif;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-top: 1px;}
+.credit-offer {background-color: red;
+    color: white;
+    padding: 7px;
+    margin: 15px}
+@media screen and (max-width: 768px){
+    nav .full-width {display: none;}
+    nav .short-width {display: flex;}
+    .main-nav {font-size: 10px;}
+    nav .sub-nav {display: flex;}
+    nav .company-name {font-size: 15px;
+    padding: 5px;}
+    nav .search-form {display: flex;
+    }
+}

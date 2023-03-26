@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+main .categories {display: flex;
+        position: relative; top: 70px}
+.categories {flex: 1px 1px 256px;
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 20%}
+.categories a { margin-bottom: 5px; 
+    padding: 10px;
+    background-color: #44b;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    text-transform:uppercase;}
+a:hover {box-shadow: 0 2px 5px -2px black;}
+
+@media screen and (max-width: 768px) {
+main .categories {display: flex;
+        flex-direction: row;
+        font-size: 10px;}
+}
